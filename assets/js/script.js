@@ -3,6 +3,7 @@ import fixedMenu from "./components/fixedHeader.js";
 import inputValid from "./components/inputValid.js";
 import hiddenMenu from "./components/hiddenMenu.js";
 import phoneValid from "./components/phoneValid.js";
+import formValid from "./components/formValid.js";
 
 function yandexMap() {
     ymaps.ready(init);
@@ -41,7 +42,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     inputValid(".input-name", "text");
     inputValid(".input-phone", "tel");
+    inputValid(".input-email", "email");
     inputValid(".input-text", "text");
+
+    formValid("form", "submit");
 
     yandexMap();
 });

@@ -36,6 +36,11 @@ form {
             &:hover {
                 background-color: $hover;
             }
+
+            &:disabled {
+                background-color: $accent;
+                opacity: 0.6;
+            }
         }
 
         @import "../custom-checkbox/custom-checkbox.scss";

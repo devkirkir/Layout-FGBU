@@ -1325,6 +1325,10 @@ body .question .container .question-container form .form-column input[type=submi
 body .question .container .question-container form .form-column input[type=submit]:hover {
   background-color: #f47a0b;
 }
+body .question .container .question-container form .form-column input[type=submit]:disabled {
+  background-color: #e27410;
+  opacity: 0.6;
+}
 body .question .container .question-container form .form-column .custom-checkbox {
   position: relative;
 }

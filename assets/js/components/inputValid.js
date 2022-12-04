@@ -9,7 +9,12 @@ const inputValid = (inputSelector, type) => {
                     : input.classList.add("valid-error");
                 break;
             case "tel":
-                input.value.length >= 8
+                input.value.replace(/\D/g, "").length >= 11
+                    ? input.classList.remove("valid-error")
+                    : input.classList.add("valid-error");
+                break;
+            case "email":
+                input.value.length >= 5
                     ? input.classList.remove("valid-error")
                     : input.classList.add("valid-error");
                 break;
