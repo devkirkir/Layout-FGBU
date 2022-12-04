@@ -1,0 +1,27 @@
+@import "reset.scss";
+@import "_vars.scss";
+
+body {
+    width: 100%;
+    min-width: $minWidth;
+
+    @import "components/header/header.scss";
+
+    @import "components/banner/banner.scss";
+
+    @import "components/services/services.scss";
+
+    @import "components/procedure/procedure.scss";
+
+    @import "components/team/team.scss";
+
+    @import "components/question/question.scss";
+
+    @import "components/contacts/contacts.scss";
+
+    @import "components/footer/footer.scss";
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

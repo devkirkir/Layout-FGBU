@@ -1,0 +1,44 @@
+.question {
+    position: relative;
+    width: 100%;
+    @include bgGradient();
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        max-width: $maxWidth;
+        padding: 100px 20px;
+        margin: 0 auto;
+
+        .question-container {
+            flex: 2;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 40px 20px 0;
+
+            .title {
+                @include text(#fff, 56px, 700, 120%);
+                margin-bottom: 20px;
+            }
+
+            @import "form/form.scss";
+        }
+
+        @import "phone-list/phone-list.scss";
+    }
+
+    .noise {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        background-image: url("../img/noise.png");
+        z-index: 1;
+    }
+}
+
+@import "media/1060media.scss";
+@import "media/960media.scss";
+@import "media/768media.scss";

@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .advantages {
+        flex-direction: column;
+        gap: 20px;
+
+        &__elem {
+            flex: 1;
+            @include text($text, 14px, 400, 120%);
+            padding: 15px;
+            &:nth-child(1) {
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            &:nth-child(2) {
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+
+            &:nth-child(3) {
+                flex-shrink: 1;
+                flex-basis: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+    footer {
+        .container {
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                order: 2;
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 960px) {
+    .services {
+        .container {
+            padding: 70px 20px;
+
+            .title {
+                margin-bottom: 34px;
+
+                a {
+                    font-size: 40px;
+                }
+
+                &::after {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 260px;
+                gap: 40px;
+                grid-template-areas:
+                    "service1 service2"
+                    "service1 service4"
+                    "service5 service3";
+            }
+        }
+    }
+}

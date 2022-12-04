@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+    .question {
+        .container {
+            padding: 50px 20px;
+
+            .question-container {
+                .title {
+                    font-size: 24px;
+                }
+            }
+
+            .phone-list {
+                .title {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

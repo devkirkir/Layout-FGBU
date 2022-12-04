@@ -1,0 +1,38 @@
+.phone-list {
+    flex: 1;
+    padding: 20px 0 20px 40px;
+
+    .title {
+        @include text(#fff, 56px, 700, 120%);
+        margin-bottom: 20px;
+    }
+
+    .numbers {
+        &__block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .icon {
+                width: 24px;
+                height: 24px;
+                background-image: url("../scss/components/contacts/img/phone.svg");
+                margin-right: 5px;
+            }
+
+            .content {
+                span {
+                    display: block;
+                    @include text(#fff, 14px, 400, 120%);
+                }
+
+                a {
+                    @include text(#fff, 18px, 600, 145%);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@import "media/1060media.scss";

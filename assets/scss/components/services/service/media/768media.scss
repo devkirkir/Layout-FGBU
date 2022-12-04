@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+    &__service {
+        a {
+            @include text(#fff, 18px, 600, 140%);
+
+            span {
+                @include text(#fff, 14px, 600, 140%);
+            }
+        }
+
+        &:nth-child(1) {
+            .icon {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .shape-big {
+            position: absolute;
+            bottom: -45px;
+            left: -55px;
+            z-index: 0;
+
+            svg {
+                width: 138px;
+                height: 135px;
+            }
+        }
+    }
+}

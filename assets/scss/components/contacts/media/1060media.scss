@@ -1,0 +1,22 @@
+@media screen and (max-width: 1060px) {
+    .contacts {
+        .container {
+            padding: 0;
+            flex-direction: column;
+
+            .contacts-container {
+                order: 2;
+
+                .contacts-row {
+                    gap: 20px;
+                    max-width: 100%;
+                    justify-content: center;
+                }
+            }
+
+            .map {
+                order: 1;
+            }
+        }
+    }
+}

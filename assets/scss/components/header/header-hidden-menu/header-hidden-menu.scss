@@ -1,0 +1,93 @@
+.hidden-header-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 720px;
+    min-width: $minWidth;
+    height: 100vh;
+    background-color: $bg;
+    z-index: 3;
+    transform: translateX(-1000px);
+    transition: transform 0.3s linear;
+    padding-top: 100px;
+
+    nav {
+        .hidden-header-navigation-list {
+            list-style: none;
+
+            &__item {
+                position: relative;
+
+                .hidden-header-navigation__link {
+                    display: block;
+                    @include text($headers, 18px, 600, 145%);
+                    text-decoration: none;
+                    padding: 30px;
+                    border-bottom: 1px solid $border;
+                    transition: color 0.2s ease-in-out;
+
+                    .collapse-block {
+                        height: 0;
+                        opacity: 0;
+                        list-style: none;
+                        transition: 0.2s linear;
+                        margin: 10px 0 0 8px;
+
+                        li {
+                            @include text($headers, 16px, 500, 120%);
+                            margin-bottom: 8px;
+                            transition: 0.2s ease-in-out;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            &:hover {
+                                color: $hover;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                &:nth-child(1):after {
+                    position: absolute;
+                    top: 32px;
+                    right: 48px;
+                    content: url("../scss/components/header/header-hidden-menu/img/plus.svg");
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            .collapse-link--active {
+                .hidden-header-navigation__link {
+                    color: $hover;
+
+                    .collapse-block {
+                        opacity: 1;
+                        transition: 0.2s linear;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    top: 32px;
+                    right: 48px;
+                    content: url("../scss/components/header/header-hidden-menu/img/minus.svg");
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.hidden-header-navigation--active {
+    transform: translateX(0);
+    overflow-y: auto;
+}

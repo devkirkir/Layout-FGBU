@@ -1,0 +1,38 @@
+// Sizes
+$maxWidth: 1280px;
+$minWidth: 300px;
+
+// Colors
+
+$text: #2d3343;
+$headers: #313b59;
+$input: #969696;
+$bg: #f4f7fb;
+$border: #f2f2f2;
+
+$accent: #e27410;
+$hover: #f47a0b;
+
+// Gradient
+
+$gColor: #014c88;
+$gColor2: #015da0;
+$gColor3: #026ab3;
+
+@mixin bgGradient() {
+    background: linear-gradient(
+        90deg,
+        $gColor 0%,
+        $gColor2 48.84%,
+        $gColor3 103.05%
+    );
+}
+
+// Mixins
+
+@mixin text($color, $fs, $fw, $lh) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}

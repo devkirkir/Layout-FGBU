@@ -1,0 +1,9 @@
+@media screen and (max-width: 460px) {
+    .services {
+        .container {
+            .services-container {
+                grid-auto-rows: 250px;
+            }
+        }
+    }
+}

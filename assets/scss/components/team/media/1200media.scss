@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) {
+    .team {
+        padding: 70px 0;
+
+        .team-container {
+            .column {
+                img,
+                div {
+                    width: 100%;
+
+                    a {
+                        @include text(#fff, 12px, 400, 120%);
+                        text-decoration: none;
+                        background-color: $accent;
+                        padding: 8px 30px;
+                    }
+                }
+            }
+        }
+    }
+}

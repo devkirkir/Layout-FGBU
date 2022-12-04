@@ -1,0 +1,51 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    .form-column {
+        display: flex;
+        flex: 1;
+        min-width: 330px;
+        flex-direction: column;
+        gap: 14px;
+
+        input,
+        textarea {
+            @include text($text, 18px, 400, 145%);
+            border: 1px solid transparent;
+            border-radius: 4px;
+            padding: 8px 14px;
+
+            &:focus {
+                border: 1px solid $accent;
+            }
+        }
+
+        textarea {
+            height: 100%;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            @include text(#fff, 16px, 400, 120%);
+            background-color: $accent;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $hover;
+            }
+        }
+
+        @import "../custom-checkbox/custom-checkbox.scss";
+    }
+}
+
+.valid-error {
+    border: 2px solid red !important;
+    transition: 0.2s ease-in;
+}
+
+@import "media/768media.scss";
+@import "media/460media.scss";

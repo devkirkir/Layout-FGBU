@@ -1,0 +1,51 @@
+.services {
+    width: 100%;
+
+    .container {
+        max-width: $maxWidth;
+        padding: 100px 20px;
+        margin: 0 auto;
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 62px;
+
+            a {
+                @include text($headers, 56px, 700, 120%);
+                text-decoration: none;
+                transition: color 0.2s ease-in-out;
+                margin-right: 18px;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+            &::after {
+                display: inline-block;
+                content: "";
+                width: 40px;
+                height: 40px;
+                background-image: url("../scss/components/services/img/right-circle.svg");
+                background-size: contain;
+            }
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 270px;
+            gap: 40px;
+            grid-template-areas:
+                "service1 service2 service3"
+                "service1 service4 service5";
+
+            @import "service/service.scss";
+        }
+    }
+}
+
+@import "media/960media.scss";
+@import "media/768media.scss";
+@import "media/460media.scss";

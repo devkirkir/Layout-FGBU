@@ -1,0 +1,50 @@
+@media screen and (max-width: 960px) {
+    header {
+        padding: 0 20px;
+        .container {
+            .header-main {
+                &-top {
+                    .links {
+                        &__link {
+                            margin-right: 30px;
+                        }
+                    }
+
+                    .header-btns {
+                        &__impaired {
+                            padding: 0 6px;
+
+                            span {
+                                display: none;
+                            }
+
+                            &::before {
+                                margin: 0;
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                &-bottom {
+                    .header-navigation {
+                        &__logo {
+                            display: block;
+                        }
+
+                        .header-navigation-list {
+                            &__item {
+                                &:nth-child(6) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

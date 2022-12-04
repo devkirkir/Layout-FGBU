@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+    .team {
+        position: relative;
+        height: 550px;
+        padding: 50px 0;
+
+        .title {
+            font-size: 24px;
+        }
+
+        .team-container {
+            position: absolute;
+            left: -100px;
+            overflow: hidden;
+
+            .column {
+                img {
+                    min-width: 140px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+
+                div {
+                    background-image: none;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                        width: 100%;
+                        @include text(#fff, 14px, 400, 120%);
+                        text-decoration: none;
+                        background-color: $accent;
+                        padding: 0 0;
+
+                        &:hover {
+                            background-color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.contacts {
+    width: 100%;
+    background-color: $bg;
+
+    .container {
+        display: flex;
+        max-width: $maxWidth;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        .contacts-container {
+            flex: 1;
+            padding: 40px 20px;
+
+            .title {
+                @include text($headers, 56px, 700, 120%);
+                margin-bottom: 50px;
+            }
+
+            .contacts-row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 580px;
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &__elem {
+                    width: 230px;
+                    margin-right: 10px;
+
+                    .top {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+                        }
+
+                        span {
+                            @include text($headers, 16px, 500, 120%);
+                        }
+                    }
+
+                    .content {
+                        @include text($text, 18px, 600, 145%);
+                        margin-bottom: 15px;
+
+                        address {
+                            font-style: normal;
+                        }
+
+                        span {
+                            display: block;
+                            @include text($text, 14px, 400, 120%);
+                        }
+
+                        a {
+                            text-decoration: none;
+                            @include text($text, 18px, 600, 145%);
+                            transition: 0.2s ease-in-out;
+
+                            &:hover {
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .map {
+            flex: 1;
+            min-height: 350px;
+            background-color: $bg;
+        }
+    }
+}
+
+@import "media/1060media.scss";
+@import "media/960media.scss";
+@import "media/768media.scss";

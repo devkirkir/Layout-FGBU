@@ -1,0 +1,43 @@
+.custom-checkbox {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        z-index: 1;
+
+        &:checked + label::before {
+            background-image: url("../scss/components/question/custom-checkbox/img/check.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+        }
+    }
+
+    label {
+        position: relative;
+        @include text(#fff, 14px, 400, 120%);
+        cursor: pointer;
+        z-index: 2;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: $accent;
+            margin-right: 5px;
+        }
+
+        a {
+            @include text($accent, 14px, 400, 120%);
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+}

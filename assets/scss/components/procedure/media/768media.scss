@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .procedure {
+        background: url("../scss/components/procedure/img/bg.svg") center center
+            no-repeat;
+        background-color: $bg;
+        background-size: 70%;
+
+        .container {
+            padding: 50px 20px;
+            .title {
+                font-size: 24px;
+            }
+        }
+    }
+}

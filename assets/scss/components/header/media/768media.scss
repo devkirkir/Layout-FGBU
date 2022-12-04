@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+        height: 70px;
+        padding: 0;
+
+        .container {
+            .header-main {
+                &-top {
+                    padding: 0 20px;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .header-mobile-container {
+                        display: flex;
+                    }
+
+                    .links {
+                        display: none;
+                    }
+
+                    .header-btns {
+                        &__impaired {
+                            margin-right: 22px;
+                        }
+
+                        &__phone {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 4px;
+                            border: 1px solid $accent;
+
+                            span {
+                                display: none;
+                            }
+
+                            &::before {
+                                content: url("../img/icons/phone_no_circle.svg");
+                                height: auto;
+                                width: auto;
+                                margin-right: 0;
+                                margin-bottom: -5px;
+                            }
+
+                            &:hover {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                &-bottom {
+                    display: none;
+                }
+            }
+        }
+    }
+}

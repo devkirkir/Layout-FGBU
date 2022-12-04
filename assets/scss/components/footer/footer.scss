@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $maxWidth;
+        padding: 20px;
+        margin: 0 auto;
+
+        p {
+            @include text($text, 14px, 400, 120%);
+        }
+
+        .privacy {
+            @include text($accent, 14px, 400, 120%);
+            text-decoration: none;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+}
+
+@import "media/768media.scss";

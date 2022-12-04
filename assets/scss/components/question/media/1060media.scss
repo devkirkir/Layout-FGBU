@@ -1,0 +1,13 @@
+@media screen and (max-width: 1060px) {
+    .question {
+        .container {
+            padding: 100px 20px;
+            flex-direction: column;
+
+            .question-container {
+                border-right: none;
+                padding-right: 0;
+            }
+        }
+    }
+}
