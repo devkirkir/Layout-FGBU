@@ -270,7 +270,7 @@ body header .container .header-main-bottom .header-navigation .header-navigation
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
-  z-index: 3;
+  z-index: 4;
 }
 body header .container .header-main-bottom .header-navigation .header-navigation-list__item .header-navigation__link:hover {
   color: #f47a0b;
