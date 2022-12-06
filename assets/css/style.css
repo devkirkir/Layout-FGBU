@@ -11,7 +11,7 @@
     outline: rgba(226, 116, 16, 0.3) solid 2px;
 }
 
-input[type="submit"],
+input,
 button {
     -webkit-appearance: none;
 }
