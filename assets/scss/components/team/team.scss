@@ -29,7 +29,8 @@
             img,
             div {
                 flex: 1;
-                width: 300px;
+                height: 100%;
+                max-width: 300px;
                 object-fit: contain;
             }
 
