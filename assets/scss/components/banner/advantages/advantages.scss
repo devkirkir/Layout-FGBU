@@ -17,6 +17,10 @@
         cursor: pointer;
         transition: transform 0.15s linear;
 
+        svg {
+            min-width: 48px;
+        }
+
         &:hover {
             color: #fff;
             background-color: $hover;
